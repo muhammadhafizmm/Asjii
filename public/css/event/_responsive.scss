@@ -1,0 +1,14 @@
+@mixin responsive($device) {
+    @if $device == phone {
+        @media only screen and (max-width: 600px) { @content };
+    }
+    @if $device == tabPort {
+        @media only screen and (max-width: 900px) { @content };
+    }
+    @if $device == tabLan {
+        @media only screen and (max-width: 1400px) { @content };
+    }
+    @if $device == bigDesk {
+        @media only screen and (min-width: 1800px) { @content };
+    }
+}

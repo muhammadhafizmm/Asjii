@@ -1,0 +1,21 @@
+// color that i use
+$red : #EF5350;
+$redBtn : #8d2a48;
+$black : #343A40;
+
+
+.line{
+    width: 70%;
+    height: 3px;
+    background-color: $red;
+}
+
+.news-list{
+    .news-item{
+        display: none;
+    }
+}
+.header-show{
+    font-size: 4rem;
+    font-weight: 700;
+}

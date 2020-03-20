@@ -1,0 +1,12 @@
+//all import scss
+@import './responsive';
+@import './event';
+@import './news';
+
+// for all.
+body{
+    background-color: #EEEEEE;
+}
+.content{
+    padding: 2em 10%;
+}

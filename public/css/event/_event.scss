@@ -1,0 +1,98 @@
+// color that i use
+$red : #EF5350;
+$redBtn : #8d2a48;
+$black : #343A40;
+
+body{
+    background-color: #EEEEEE;
+}
+.content{
+    padding: 2em 10%;
+    .event-list{
+        .event-item{
+            position: relative;
+            .dot{
+                display: block;
+                position: absolute;
+                left: -13px;
+                top: 11px;
+                width: 20px;
+                height: 20px;
+                border-radius: 20px;
+                background-color: $red;
+            }
+            padding: .5rem 1.5rem;
+            border-left: 6px solid $red;
+            cursor: pointer;
+        }
+    }
+}
+
+.imgCarousel{
+    width: 100%;
+    height: 60vh;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-black{
+    color: white;
+    background-color: $black;
+    &:hover{
+        color: white;
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.btn-edit{
+    color: white;
+    background-color: #4a47a3;
+    &:hover{
+        color: white;
+        background-color: #333263;
+    }
+}
+
+.btn-delete{
+    color: white;
+    background-color: #af2c51;
+    &:hover{
+        color: white;
+        background-color: $redBtn;
+    }
+}
+
+.bg-white{
+    background-color: white;
+}
+
+// @overide pagetation
+.pagination{
+    .page-item{
+        &.active{
+            .page-link{
+                color: white;
+                background-color: $redBtn;
+                border-color: $redBtn;
+            }
+        }
+        .page-link{
+            color: $redBtn;
+        }
+    }
+}
+
+.imgDeleteOption{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
